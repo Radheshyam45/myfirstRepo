@@ -1,98 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RailWay — Train Ticket Booking</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Ticket Booking</title>
 
   <style>
-    :root {
-      --primary: #155eef;
-      --primary-dark: #0c3ca4;
-      --secondary: #ffb703;
-      --dark: #0f172a;
-      --muted: #64748b;
-      --light: #f5f8ff;
-      --white: #ffffff;
-      --border: #e2e8f0;
-      --success: #0f9d58;
-      --shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
-    }
-
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
 
     body {
-      font-family: "Inter", sans-serif;
-      color: var(--dark);
-      background: #f8faff;
+      background: #eef3f8;
+      color: #222;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
+    header {
+      background: #123c69;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
 
-    button,
-    input,
-    select {
-      font: inherit;
+    header h1 {
+      margin-bottom: 8px;
     }
 
-    button {
-      cursor: pointer;
-      border: 0;
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 40px auto;
     }
 
-    .hero {
-      min-height: 650px;
-      padding: 24px 7%;
-      position: relative;
-      color: var(--white);
-      overflow: hidden;
-      background:
-        linear-gradient(90deg, rgba(5, 19, 59, .9), rgba(5, 19, 59, .45)),
-        url("https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=2000&q=85")
-        center/cover;
+    .booking-box {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .navbar {
-      max-width: 1250px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      z-index: 2;
-    }
-
-    .logo {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      font-size: 1.35rem;
-      font-weight: 800;
-      letter-spacing: -.5px;
-    }
-
-    .logo-icon {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border-radius: 13px;
-      color: var(--primary);
-      background: var(--white);
-      font-size: 1.45rem;
-    }
-
-    .nav-links {
-      display: flex;
-      ali
+    .booking-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      
